@@ -11,9 +11,9 @@ Before new record files are accepted to MassBank-data, they need to pass the val
 git clone --depth 1 -q https://github.com/MassBank/MassBank-web.git
 mvn -f MassBank-web/MassBank-Project/MassBank-lib/pom.xml package
 ```
-The [Validator](https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/MassBank-lib/src/main/java/massbank/Validator.java) executable can be found at `MassBank-web/MassBank-Project/MassBank-lib/target/MassBank-lib/MassBank-lib/bin/Validator`. If you want to copy the executable to a different place, make sure that the environment variable `LIB_DIR` inside the executable points to the abolute path of `MassBank-web/MassBank-Project/MassBank-lib/target/MassBank-lib/MassBank-lib/lib`. Now its possible to validate record files locally. `Validator` supports validation of a single record file, several files as well as one or several directories containing record files, eg. 
+The [Validator](https://github.com/MassBank/MassBank-web/blob/main/MassBank-Project/MassBank-lib/src/main/java/massbank/Validator.java) executable jar can be found at `MassBank-web/MassBank-Project/MassBank-lib/target/Validator.jar`. For convenience a script is available at `MassBank-web/MassBank-Project/MassBank-lib/bin/Validator`. If you want to copy the script to a different place, make sure to copy `target/Validator.jar` as well. `Validator` supports validation of a single record file, several files as well as one or several directories containing record files, eg. 
 ```
-MassBank-web/MassBank-Project/MassBank-lib/target/MassBank-lib/MassBank-lib/bin/Validator <my record directory>
+MassBank-web/MassBank-Project/MassBank-lib/bin/Validator <my record directory>
 ```
 
 ## Submit new records to MassBank-data or modify existing records
