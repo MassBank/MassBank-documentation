@@ -6,7 +6,7 @@ Contributors are welcome to provide new spectra to MassBank. New spectra should 
 The preferred software to generate MassBank records is [RMassBank](https://www.bioconductor.org/packages/release/bioc/html/RMassBank.html). RMassBank is in continuous development. Hence, use the latest version available, please. If you are using your own pipeline please consider to provide it to other users(please open an issue).
 
 ## Validate new record files locally
-Before new record files are accepted to MassBank-data, they need to pass the validation. This will be done automatically if a pull request is created. Its also possible to validate record files locally in advance. To validate new record files locally please download the latest release from the [MassBank-web](https://github.com/MassBank/MassBank-cli-tools) repo and run it.
+Before new record files are accepted to MassBank-data, they need to pass the validation. This will be done automatically if a pull request is created. Its also possible to validate record files locally in advance. To validate new record files locally please download the latest release from the [MassBank-cli-tools](https://github.com/MassBank/MassBank-cli-tools) repo and run it.
 
 The release contains the compiled jar files in the lib folder and a litle helper script for convinience in the bin folder. 
 The `Validator` supports validation of a single record file, several files as well as one or several directories containing record files, eg. 
