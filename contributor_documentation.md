@@ -1,6 +1,6 @@
 # Contributor documentation
 
-Contributors are welcome to provide new spectra to MassBank. New spectra should meet the format described in the [MassBank record format specification](github.com/MassBank/MassBank-documentation/blob/dev/MassBankRecordFormat.md). All MassBank spectra are stored in the [MassBank-data](https://github.com/MassBank/MassBank-data) repository. To submit new spectra create a pull request to MassBank-data or open an issue to get in contact.
+Contributors are welcome to provide new spectra to MassBank. New spectra should meet the format described in the [MassBank record format specification](https://github.com/MassBank/MassBank-documentation/blob/dev/MassBankRecordFormat.md). All MassBank spectra are stored in the [MassBank-data](https://github.com/MassBank/MassBank-data) repository. To submit new spectra create a pull request to MassBank-data or open an issue to get in contact.
 
 ## Generation of new records for upload to MassBank-data
 The preferred software to generate MassBank records is [RMassBank](https://www.bioconductor.org/packages/release/bioc/html/RMassBank.html). RMassBank is in continuous development. Hence, use the latest version available, please. If you are using your own pipeline please consider to provide it to other users(please open an issue).
