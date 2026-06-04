@@ -138,7 +138,7 @@ MassBank Record Information in a MassBank Record is arranged in a fixed order (s
   </tr>
   <tr>
     <td>CH$COMPOUND_CLASS</td>
-    <td>M</td>
+    <td>O</td>
     <td>U</td>
     <td>S</td>
     <td>Chemical category</td>
