@@ -77,3 +77,7 @@ git commit -a -m "Bumped version number to 2019.09.1-SNAPSHOT"
 [dev 74d9424] Bumped version number to 2019.09.1-SNAPSHOT
 $ git push
 ```
+
+# Jupyter Notebook
+
+The [MassBank Analytics](https://github.com/MassBank/MassBank-analytics) repository provides an example of how to fetch data from the MassBank API and how to use it for simple plotting. This can also be directly tested in a [Jupyter notebook](https://mybinder.org/v2/gh/MassBank/MassBank-analytics/HEAD?urlpath=%2Fdoc%2Ftree%2Frecord_grow.ipynb).
