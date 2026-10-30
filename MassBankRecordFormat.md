@@ -1537,8 +1537,11 @@ The automated annotation by RMassBank is currently tentative.
 Example 5:
 mzPAF is a standardized data model and serialization for fragment ion peak annotations developed by HUPO-PSI. 
 mzPAF supports fragment ion peak annotation of small molecules.
+
 Reference 1: [Peak Annotation Format (mzPAF)](https://www.psidev.info/mzpaf)
+
 Reference 2: [Klein et al. 2024](https://doi.org/10.1021/acs.analchem.4c04091)
+
 ```
 PK$ANNOTATION: m/z int mzPAF
   118.0650357 12.2304 f{C8H8N1}/-0.76ppm,p-C3H5N1O2
