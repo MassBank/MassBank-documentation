@@ -1534,6 +1534,23 @@ PK$ANNOTATION: m/z tentative_formula formula_count mass error(ppm)
 ```
 The automated annotation by RMassBank is currently tentative.
 
+Example 5:
+mzPAF is a standardized data model and serialization for fragment ion peak annotations developed by HUPO-PSI. 
+mzPAF supports fragment ion peak annotation of small molecules.
+Reference 1: [Peak Annotation Format (mzPAF)](https://www.psidev.info/mzpaf)
+Reference 2: [Klein et al. 2024](https://doi.org/10.1021/acs.analchem.4c04091)
+```
+PK$ANNOTATION: m/z int mzPAF
+  118.0650357 12.2304 f{C8H8N1}/-0.76ppm,p-C3H5N1O2
+  132.0808228 15.9817 f{C9H10N1}/0.36ppm,p-C2H3N1O2
+  144.0807883 25.1324 f{C10H10N1}/0.09ppm,p-C1H3N1O2
+  146.0600396 159.1599 f{C9H8N1O1}/-0.00ppm,p-C2H5N1O1
+  159.0917080 37.8153 f{C10H11N2}/0.21ppm,p-C1H2O2
+  170.0599950 9.2608 f{C11H8N1O1}/-0.27ppm,p-H5N1O1
+  188.0706364 999.0000 f{C11H10N1O2}/0.17ppm,p-H3N1
+  205.0966171 34.1348 f{C11H13N2O2}/-2.62ppm,p
+```
+
 See Section 2.7.2 about more details of Example 3. 
 
 #### <a name="2.6.3"></a>2.6.3 PK$NUM\_PEAK
