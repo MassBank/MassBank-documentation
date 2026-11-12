@@ -2,6 +2,7 @@
 MassBank Consortium (May 13, 2022)
 
 #### Updated
+- **Nov 2026**: Added Example 5 (mzPAF) for PK$ANNOTATION and cross references to HUPO-PSI.
 - **May 2022**: With version 2.6.0 MassBank introduces a new ACCESSION scheme. It offers more freedom for contributors in the naming of their records. The new scheme consists of three fields separated by 'minus' signs and follows the format ID-[A-Z0–9_]{1,32}-[A-Z0–9_]{1,64}. The field ID will always be MSBNK for official MassBank releases. The second field is the contributor ID and is usually assigned by MassBank staff. Now it can be up to 32 characters long and is comprised of letters, digits and the '_' sign. The third field is the ID assigned by the contributor and can be up to 64 characters long and is also comprised of letters, digits and the '_' sign. 
 - **April 2022**: Added EAD (Electron Activated Dissocation) as allowed fragmentation mode.
 - **July 2021**: Move to a semantic versioning scheme X.Y.Z with Z increases for changes in the description or fixing of typos, Y increases for changes that also change the Validator software and X increases with changes that break compatibility with older versions of the software.
@@ -1533,6 +1534,26 @@ PK$ANNOTATION: m/z tentative_formula formula_count mass error(ppm)
   133.0766 C8H9N2+ 1 133.076 4.34
 ```
 The automated annotation by RMassBank is currently tentative.
+
+Example 5:
+mzPAF is a standardized data model and serialization for fragment ion peak annotations developed by HUPO-PSI. 
+mzPAF supports fragment ion peak annotation of small molecules.
+
+Reference 1: [Peak Annotation Format (mzPAF)](https://www.psidev.info/mzpaf)
+
+Reference 2: [Klein et al. 2024](https://doi.org/10.1021/acs.analchem.4c04091)
+
+```
+PK$ANNOTATION: m/z int mzPAF
+  118.0650357 12.2304 f{C8H8N1}/-0.76ppm,p-C3H5N1O2
+  132.0808228 15.9817 f{C9H10N1}/0.36ppm,p-C2H3N1O2
+  144.0807883 25.1324 f{C10H10N1}/0.09ppm,p-C1H3N1O2
+  146.0600396 159.1599 f{C9H8N1O1}/-0.00ppm,p-C2H5N1O1
+  159.0917080 37.8153 f{C10H11N2}/0.21ppm,p-C1H2O2
+  170.0599950 9.2608 f{C11H8N1O1}/-0.27ppm,p-H5N1O1
+  188.0706364 999.0000 f{C11H10N1O2}/0.17ppm,p-H3N1
+  205.0966171 34.1348 f{C11H13N2O2}/-2.62ppm,p
+```
 
 See Section 2.7.2 about more details of Example 3. 
 
